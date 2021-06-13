@@ -22,7 +22,7 @@ public class Fibonacci {
 		iterativeFunc(element);
 		iterativeTime = System.nanoTime() - startTime;
 		
-		System.out.println("Element: " + element + "/45");
+		System.out.println("Element: " + element + "/25");
 		System.out.println("Time: " + iterativeTime);
 		
 		return iterativeTime;
@@ -41,7 +41,7 @@ public class Fibonacci {
 		recursiveFunc(element);
 		recursiveTime = System.nanoTime() - startTime;
 		
-		System.out.println("Element: " + element + "/45");
+		System.out.println("Element: " + element + "/25");
 		System.out.println("Time: " + recursiveTime);
 		
 		return recursiveTime;
