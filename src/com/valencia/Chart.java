@@ -14,7 +14,9 @@ import javafx.stage.Stage;
 public class Chart extends Application {
 
     @Override  
-    public void start(Stage stage) throws Exception {  
+    public void start(Stage stage) throws Exception {
+    	
+    	System.out.println("Starting program...");
             
         NumberAxis xAxis = new NumberAxis(1,25,1);  
         NumberAxis yAxis = new NumberAxis(0,100000,10000);     
@@ -48,9 +50,12 @@ public class Chart extends Application {
         Group root = new Group(linechart);  
         Scene scene = new Scene(root,500,400);
         
+        System.out.println("Showing chart...");
+        
         stage.setScene(scene);  
         stage.setTitle("Fibonacci Sequence Functions Comparison");  
         stage.show();  
+        
     }
     
     /**
@@ -59,7 +64,7 @@ public class Chart extends Application {
      * @param args
      */
     public static void main(String[] args) {
-
+    	
         launch(args);
         System.exit(0); 
     }      
